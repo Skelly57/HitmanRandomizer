@@ -129,6 +129,21 @@ suits = ['Default Suit', "47's Signature Suit", "47's Signature Suit with Gloves
          'The Black Dragon', 'Guru Suit', 'The White Shadow', 'The Straitjacket', 'The Rapacious Suit',
          'The Narcissus Suit', 'The Lotophage Suit', 'The Scarlet Suit', 'The Profligacy Suit', 'The Odium Suit',
          'The Temper Suit']
+
+print("Welcome to the Hitman Randomizer. Before we start, here's some options to customize your experience.")
+answer = str(input("Include items from the Trinity Pack? Y/N: "))
+if answer == 'Y' or answer == 'y':
+    concealed_weapons += ['ICA19 Whtie Trinity', 'ICA19 Red Trinity', 'ICA19 Black Trinity']
+    pistols += ['ICA19 Whtie Trinity', 'ICA19 Red Trinity', 'ICA19 Black Trinity']
+    containers += ['Premier White Briefcase', 'Crimson Red Briefcase', 'Ultimate Black Briefcase']
+    suits += ['Premier White Suit', 'Crimson Red Suit', 'Ultimate Black Suit']
+
+answer = str(input("Include items only available from Progress Transfer (ICA Performance Coins, Explosive Pen, etc.)? Y/N: "))
+if answer == 'Y' or answer == 'y':
+    distractions += ['ICA Performance Coin']
+    containers += ['Aluminum Travel Briefcase']
+    explosives += ['Explosive Pen', 'Lil Flashy']
+    suits += ['Black Winter Suit', 'Florida Fit with Gloves']
 def random_loadout():
     level = random.choices(maps)
 
