@@ -25,7 +25,7 @@ maps = ['Paris', 'Sapienza', 'Marrakesh', 'Bangkok', 'Colorado', 'Hokkaido',
 concealed_weapons = ['"El Matador"', '"Rude Ruby"', 'Concept 5', 'Custom 5MM', 'Custom 5MM DTI',
                      'HWK21', 'HWK21 Covert', 'HWK21 MK II', 'HWK21 Pale Homemade Silencer', 'ICA DTI Stealth',
                      'ICA19', 'ICA19 Black Lily', 'ICA19 Chrome', 'ICA19 Classicballer', 'ICA19 F/A',
-                     'ICA19 F/A Stealth', 'ICA19 F/A Stealth "Ducky" Edition', 'ICA19 Goldballer', 'ICA19 Shortballer', 'ICA19 Silverballer',
+                     'ICA19 F/A Stealth', 'ICA19 F/A Stealth "Ducky" Edition', 'ICA19 Goldballer', 'ICA19 Iceballer', 'ICA19 Shortballer', 'ICA19 Silverballer',
                      'ICA19 Silverballer MK II', 'Kalmer 1 - Tranquilizer', 'Kalmer 2 - Tranquilizer', 'Krugermeier 2-2', 'Krugermeier 2-2 Dark',
                      'Krugermeier 2-2 Silver', 'Sieker 1', 'Striker', 'Striker V3', 'The Ducky Gun',
                      'The Floral Baller', "The Serpent's Tongue", 'The Taunton Dart Gun', 'DAX X2 Covert', 'Slapdash SMG']
@@ -45,7 +45,7 @@ containers = ['Arctic Toolbox', 'Black Leather Briefcase', 'Chinese Briefcase', 
 pistols = ['"El Matador"', '"Rude Ruby"', 'Concept 5', 'Custom 5MM', 'Custom 5MM DTI',
             'HWK21', 'HWK21 Covert', 'HWK21 MK II', 'HWK21 Pale Homemade Silencer', 'ICA DTI Stealth',
             'ICA19', 'ICA19 Black Lily', 'ICA19 Chrome', 'ICA19 Classicballer', 'ICA19 F/A',
-            'ICA19 F/A Stealth', 'ICA19 F/A Stealth "Ducky" Edition', 'ICA19 Goldballer', 'ICA19 Shortballer', 'ICA19 Silverballer',
+            'ICA19 F/A Stealth', 'ICA19 F/A Stealth "Ducky" Edition', 'ICA19 Iceballer', 'ICA19 Goldballer', 'ICA19 Shortballer', 'ICA19 Silverballer',
             'ICA19 Silverballer MK II', 'Kalmer 1 - Tranquilizer', 'Kalmer 2 - Tranquilizer', 'Krugermeier 2-2', 'Krugermeier 2-2 Dark',
             'Krugermeier 2-2 Silver', 'Sieker 1', 'Striker', 'Striker V3', 'The Ducky Gun',
             'The Floral Baller', "The Serpent's Tongue", 'The Taunton Dart Gun']
@@ -57,7 +57,7 @@ smgs = ['Brine-Damaged SMG', 'DAK Black Covert', 'DAK Gold Covert', 'DAK X2 Cove
 shotguns = ['Bartoli 12G Short H', 'Bartoli Hunting Shotgun Deluxe', 'Enram HV', 'Enram HV CM', 'Enram HV Covert',
             'ICA Tactical Shotgun', 'ICA Tactical Shotgun Covert (Black)', 'ICA Tactical Shotgun Covert (White)', 'Sawed-Off Bartoli 12G', 'The Maximalist Shotgun']
 
-assault_rifles = ['RS-15', 'Shashka A33 H', 'Sieger AR552 Tactical', 'TAC-4 AR Auto', 'TAC-4 AR Desert',
+assault_rifles = ['RS-15', 'Shashka A33 Gold', 'Shashka A33 H', 'Sieger AR552 Tactical', 'TAC-4 AR Auto', 'TAC-4 AR Desert',
                   'TAC-4 AR MK II', 'TAC-4 AR Stealth', 'TAC-4 S/A', 'TAC-4 S/A Jungle', 'The Shashka Beast']
 
 sniper_rifles = ['Bartoli Woodsman Hunting Rifle', 'Druzhina 34', 'Druzhina 34 DTI', 'Druzhina 34 ICA Arctic', 'Hackl Leviathan Sniper Rifle Covert',
@@ -103,29 +103,29 @@ poisons = ['"Bubble Queen" Gum Pack', 'Antique Emetic Syringe', 'Antique Lethal 
            'Modern Emetic Syringe', 'Modern Lethal Syringe', 'Modern Sedative Syringe', 'Sedative Pills', 'Sedative Poison Vial',
            'Sedative Poison Vial MK II']
 
-explosives = ['Breaching Charge MK III', 'Concussion Grenade', 'Explosive Baseball', 'Explosive Compound', 'Explosive Golf Ball',
+explosives = ['Breaching Charge MK III', 'Concussion Grenade', 'Explosive Baseball', 'Explosive Compound', 'Explosive Golf Ball', 'Explosive XMas Gift'
               'Flash Grenade', 'Flash Grenade MK III', 'Fragmentation Grenade', 'Goldbrick Proximity Mine', 'ICA Explosive Phone',
               'ICA Micro Remote Explosive', 'ICA Proximity Concussion Device', 'ICA Proximity Concussion Device MK III', 'ICA Proximity Explosive', 'ICA Proximity Explosive MK II',
               'ICA Proximity Explosive MK III', 'ICA Proximity Micro Explosive', 'ICA Remote Concussion Devivce', 'ICA Remote Explosive', 'ICA Remote Explosive MK II',
-              'ICA Remote Explosive MK III', 'ICA Remote Flash Device', 'ICA Tripwire Mine', 'Magnesium Pouch', 'Molotov Cocktail',
-              'Napoleon Blownaparte', 'Proximity CX Demo Block', 'Proximity CX Demo Block MK II', 'Proximity Explosive Duck MK III', 'Proximity Explosive Duck',
+              'ICA Remote Explosive MK III', 'ICA Remote Flash Device', 'ICA Tripwire Mine', "Lil' Flashy", 'Magnesium Pouch', 'Molotov Cocktail',
+              'Napoleon Blownaparte', 'Nitroglycerin', 'Proximity CX Demo Block', 'Proximity CX Demo Block MK II', 'Proximity Explosive Duck MK III', 'Proximity Explosive Duck',
               'Proximity Explosive Rubber Duck MK II', 'Proximity Semtex Demo Block MK III', 'RFID Triggered Explosive', 'Remote Breaching Charge', 'Remote CX Demo Block',
               'Remote CX Demo Block MK II', 'Remote Concussion Collectors Duck', 'Remote Concussion Rubber Duck', 'Remote Explosive Classic Rubber Duck', 'Remote Explosive Devil Rubber Duck',
-              'Remote Explosive Duck', 'Remote Explosive Rubber Duck MK II', 'Remote Semtex Demo Block MK III', 'Shaman Powder', 'The Iconator',
-              'The Pale Duck', 'The Roar Flash Grenade', "The Serpent's Bite"]
+              'Remote Explosive Duck', 'Remote Explosive Rubber Duck MK II', 'Remote Semtex Demo Block MK III', 'Shaman Powder', 'The Ancestral Fountain Pen', 
+              'The Iconator', 'The Pale Duck', 'The Roar Flash Grenade', "The Serpent's Bite"]
 
 suits = ['Default Suit', "47's Signature Suit", "47's Signature Suit with Gloves", 'Absolution Suit', 'Blood Money Suit',
          'Phantom Suit', 'Ashen Suit with Gloves', 'The Undying Look', 'Suburban Suit with Driving Gloves', 'Requiem Suit',
          "Agent 17's Signature Suit", 'Platform Specific Suit', 'Terminus', 'Black & White Tuxedo Set with Gloves', 'Tuxedo with Gloves',
          'Classic All-Black Suit', 'Tuxedo, Mask and Gloves', 'The Cashmerian', 'Imperial Classic with Gloves', 'Classic Cut Long Coat Suit with Gloves',
          'Number Six with Gloves', 'Neon City Suit with Gloves', 'The New Yorker with Gloves', 'Winter Suit', 'Snow Festival Suit',
-         'Casual Suit with Gloves', 'Italian Suit with Gloves', 'Casual Tourist with Gloves', 'Summer Suave Suit', 'Summer Sightseeing Suit with Gloves',
+         'Casual Suit with Gloves', 'Italian Suit with Gloves', 'Florida Fit with Gloves', 'Casual Tourist with Gloves', 'Summer Suave Suit', 'Summer Sightseeing Suit with Gloves',
          'Casual Undercover', 'Midnight Black Suit', 'Summer Suit with Gloves', 'The Tropical Suit', 'Smart Casual Suit',
          'The Raver', 'The Lucky Ducky Suit', 'Tactical Wetsuit', 'Guerilla Wetsuit', 'Tactical Turtleneck',
          'Raven Suit', "Tactical Gear with Hunter's Hat", 'Freedom Phantom Suit', 'Polar Survival Suit', 'White Yukata',
          'Winter Sports Suit', 'Cowboy Suit', 'Lynch Suit', 'Futo Suit', 'The Neon Ninja Suit',
-         'Rave On Suit', 'The Yellow Rabbit Suit', 'The Ruby Rude Track Suit', 'The Arkian Tuxedo', 'Blue Flamingo Suit',
-         'Clown Suit', 'The Buccaneer', 'Santa 47', "The Devil's Own", 'Formal Hunting Attire',
+         'Rave On Suit', 'The Yellow Rabbit Suit', 'The Ruby Rude Track Suit', 'The Big, Bad Wolf Suit', 'The Arkian Tuxedo', 'Blue Flamingo Suit',
+         'Clown Suit', 'The Buccaneer', 'The Sandman Suit', 'Santa 47', "The Devil's Own", 'Formal Hunting Attire',
          'The Black Dragon', 'Guru Suit', 'The White Shadow', 'The Straitjacket', 'The Rapacious Suit',
          'The Narcissus Suit', 'The Lotophage Suit', 'The Scarlet Suit', 'The Profligacy Suit', 'The Odium Suit',
          'The Temper Suit']
@@ -143,7 +143,7 @@ if answer == 'Y' or answer == 'y':
     distractions += ['ICA Performance Coin']
     containers += ['Aluminum Travel Briefcase']
     explosives += ['Explosive Pen', 'Lil Flashy']
-    suits += ['Black Winter Suit', 'Florida Fit with Gloves']
+    suits += ['Black Winter Suit']
 def random_loadout():
     level = random.choices(maps)
 
