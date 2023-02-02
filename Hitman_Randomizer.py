@@ -19,8 +19,8 @@ print("                         `. (     \|     _,','")
 print("                           `.`._")
 
 maps = ['Paris', 'Sapienza', 'Marrakesh', 'Bangkok', 'Colorado', 'Hokkaido',
-        "Hawke's Bay", 'Miami', 'Santa Fortuna', 'Mumbai', 'Whittleton Creek', 'Isle of Sgail', 'New York', 'Haven Island',
-        'Dubai', 'Dartmoor', 'Berlin', 'Chongqing', 'Mendoza', 'Ambrose Island']
+        "Hawke's Bay", 'Miami', 'Santa Fortuna', 'Mumbai', 'Whittleton Creek', 'Ambrose Island', 'Isle of Sgail', 
+        'New York', 'Haven Island', 'Dubai', 'Dartmoor', 'Berlin', 'Chongqing', 'Mendoza']
 
 concealed_weapons = ['"El Matador"', '"Rude Ruby"', 'Concept 5', 'Custom 5MM', 'Custom 5MM DTI',
                      'HWK21', 'HWK21 Covert', 'HWK21 MK II', 'HWK21 Pale Homemade Silencer', 'ICA DTI Stealth',
@@ -125,7 +125,7 @@ suits = ['Default Suit', "47's Signature Suit", "47's Signature Suit with Gloves
          'Raven Suit', "Tactical Gear with Hunter's Hat", 'Freedom Phantom Suit', 'Polar Survival Suit', 'White Yukata',
          'Winter Sports Suit', 'Cowboy Suit', 'Lynch Suit', 'Futo Suit', 'The Neon Ninja Suit',
          'Rave On Suit', 'The Yellow Rabbit Suit', 'The Ruby Rude Track Suit', 'The Big, Bad Wolf Suit', 'The Arkian Tuxedo', 'Blue Flamingo Suit',
-         'Clown Suit', 'The Buccaneer', 'The Sandman Suit', 'Santa 47', "The Devil's Own", 'Formal Hunting Attire',
+         'Clown Suit', 'The Buccaneer', 'The Sandman Suit', 'Santa 47', 'The Gauze Suit', "The Devil's Own", 'Formal Hunting Attire',
          'The Black Dragon', 'Guru Suit', 'The White Shadow', 'The Straitjacket', 'The Rapacious Suit',
          'The Narcissus Suit', 'The Lotophage Suit', 'The Scarlet Suit', 'The Profligacy Suit', 'The Odium Suit',
          'The Temper Suit']
@@ -144,9 +144,63 @@ if answer == 'Y' or answer == 'y':
     containers += ['Aluminum Travel Briefcase']
     explosives += ['Explosive Pen', 'Lil Flashy']
     suits += ['Black Winter Suit']
-def random_loadout():
-    level = random.choices(maps)
 
+answer = str(input("Include items from the Street Art Pack? Y/N: "))
+if answer == 'Y' or answer == 'y':
+    concealed_weapons += ['The Concrete Bunny Pistol']
+    pistols += ['The Concrete Bunny Pistol']
+    smgs += ['The Shark SMG']
+    shotguns += ['The Concrete Shotgun']
+    sniper_rifles += ['The Concrete Sniper Rifle']
+    assault_rifles += ['The Concrete Sniper Rifle']
+    melees += ['The Concrete Bat']
+    suits += ['The Graffiti Hoody Suit']
+
+answer = str(input("Include items from the Makeshift Pack? Y/N: "))
+if answer == 'Y' or answer == 'y':
+    concealed_weapons += ['The Scrap Gun', 'The Scrap SMG']
+    pistols += ['The Scrap Gun']
+    smgs += ['The Scrap SMG']
+    shotguns += ['The Makeshift Scrap Shotgun']
+    assault_rifles += ['The Makeshift Scrap Assault Rifle']
+    sniper_rifles += ['The Scrappy Sniper Rifle']
+    melees += ['The Makeshift Katana']
+    suits += ['The Scrap Poncho Suit']
+
+freelancer_level = int(input("What is your Freelancer Mastery Level?: "))
+if freelancer_level >= 5:
+    pistols += ['The Ornamental Pistol']
+    concealed_weapons += ['The Ornamental Pistol']
+if freelancer_level >= 10:
+    assault_rifles += ['The Ornamental Assault Rifle']
+if freelancer_level >= 15:
+    melees += ['The Ornamental Katanas']
+if freelancer_level >= 20:
+    shotguns += ['The Ornamental Shotgun']
+if freelancer_level >= 25:
+    smgs += ['The Ornamental SMG']
+if freelancer_level >= 30:
+    sniper_rifles += ['The Ornamental Sniper Rifle']
+if freelancer_level >= 35:
+    suits += ['The Golden Contender Suit']
+if freelancer_level >= 40:
+    pistols += ['The Ancestral Pistol']
+    concealed_weapons += ['The Ancestral Pistol']
+if freelancer_level >= 45:
+    shotguns += ['The Ancestral Shotgun']
+if freelancer_level >= 50:
+    assault_rifles += ['The Ancestral Assault Rifle']
+if freelancer_level >= 55:
+    sniper_rifles += ['The Ancestral Sniper Rifle']
+if freelancer_level >= 60:
+    melees += ['The Ancestral Knife']
+    non_briefcase_melees += ['The Ancestral Knife']
+if freelancer_level >= 65:
+    suits += ['The Ancestral Hunter Suit']
+if freelancer_level == 100:
+    suits += ['The Master Freelancer Suit']
+
+def random_loadout(campaign = 0, map = 0):
     suit = random.choices(suits)
 
     weapon = random.choices(concealed_weapons)
@@ -287,8 +341,13 @@ def random_loadout():
     elif item_two_cat == ['Explosives']:
         item_two = random.choices(explosives)
 
+    if campaign == 0:
+        level = random.choices(maps)[0]
+    else:
+        level = maps[map]
+
     print('----------------------------------------------------------------------')
-    print("Map:", level[0])
+    print("Map:", level)
     print("Suit:", suit[0])
     print("Weapon:", weapon[0])
     print("Smuggled Item:", smuggled_item[0])
@@ -296,11 +355,18 @@ def random_loadout():
     print("Item Two:", item_two[0])
     print('----------------------------------------------------------------------')
 
-answer = str(input("Would you like to generate a loadout? Y/N: "))
-
-while answer == 'Y' or answer == 'y':
+answer = str(input("Would you like to generate a full randomized campaign? Y/N: "))
+if answer == 'Y' or answer == 'y':
+    while answer == 'Y' or answer == 'y':
+        for x in range(0, 20):
+            random_loadout(campaign = 1, map = x)
+        answer = str(input("Would you like to generate another campaign? Y/N: "))
+else:
     random_loadout()
     answer = str(input("Would you like to generate another loadout? Y/N: "))
+    while answer == 'Y' or answer == 'y':
+        random_loadout()
+        answer = str(input("Would you like to generate another loadout? Y/N: "))
 
 print("Thanks for randomizing!")
 print("ASCII Source: https://www.asciiart.eu/video-games/hitman")
