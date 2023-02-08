@@ -158,7 +158,7 @@ if answer == 'Y' or answer == 'y':
 
 answer = str(input("Include items from the Makeshift Pack? Y/N: "))
 if answer == 'Y' or answer == 'y':
-    concealed_weapons += ['The Scrap Gun', 'The Scrap SMG']
+    concealed_weapons += ['The Scrap Gun']
     pistols += ['The Scrap Gun']
     smgs += ['The Scrap SMG']
     shotguns += ['The Makeshift Scrap Shotgun']
