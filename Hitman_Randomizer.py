@@ -103,7 +103,7 @@ poisons = ['"Bubble Queen" Gum Pack', 'Antique Emetic Syringe', 'Antique Lethal 
            'Modern Emetic Syringe', 'Modern Lethal Syringe', 'Modern Sedative Syringe', 'Sedative Pills', 'Sedative Poison Vial',
            'Sedative Poison Vial MK II']
 
-explosives = ['Breaching Charge MK III', 'Concussion Grenade', 'Explosive Baseball', 'Explosive Compound', 'Explosive Golf Ball', 'Explosive XMas Gift'
+explosives = ['Breaching Charge MK III', 'Concussion Grenade', 'Explosive Baseball', 'Explosive Compound', 'Explosive Golf Ball', 'Explosive Pen', 'Explosive XMas Gift'
               'Flash Grenade', 'Flash Grenade MK III', 'Fragmentation Grenade', 'Goldbrick Proximity Mine', 'ICA Explosive Phone',
               'ICA Micro Remote Explosive', 'ICA Proximity Concussion Device', 'ICA Proximity Concussion Device MK III', 'ICA Proximity Explosive', 'ICA Proximity Explosive MK II',
               'ICA Proximity Explosive MK III', 'ICA Proximity Micro Explosive', 'ICA Remote Concussion Devivce', 'ICA Remote Explosive', 'ICA Remote Explosive MK II',
@@ -122,10 +122,10 @@ suits = ['Default Suit', "47's Signature Suit", "47's Signature Suit with Gloves
          'Casual Suit with Gloves', 'Italian Suit with Gloves', 'Florida Fit with Gloves', 'Casual Tourist with Gloves', 'Summer Suave Suit', 'Summer Sightseeing Suit with Gloves',
          'Casual Undercover', 'Midnight Black Suit', 'Summer Suit with Gloves', 'The Tropical Suit', 'Smart Casual Suit',
          'The Raver', 'The Lucky Ducky Suit', 'Tactical Wetsuit', 'Guerilla Wetsuit', 'Tactical Turtleneck',
-         'Raven Suit', "Tactical Gear with Hunter's Hat", 'Freedom Phantom Suit', 'Polar Survival Suit', 'White Yukata',
+         'Raven Suit', "Tactical Gear with Hunter's Hat", 'Freedom Phantom Suit', 'Polar Survival Suit', 'White Yukata', 'VIP Patient',
          'Winter Sports Suit', 'Cowboy Suit', 'Lynch Suit', 'Futo Suit', 'The Neon Ninja Suit',
          'Rave On Suit', 'The Yellow Rabbit Suit', 'The Ruby Rude Track Suit', 'The Big, Bad Wolf Suit', 'The Arkian Tuxedo', 'Blue Flamingo Suit',
-         'Clown Suit', 'The Buccaneer', 'The Sandman Suit', 'Santa 47', 'The Gauze Suit', "The Devil's Own", 'Formal Hunting Attire',
+         'Clown Suit', 'The Buccaneer', 'The Sandman Suit', 'Santa 47', 'The Black Bruiser Suit', 'The Gauze Suit', "The Devil's Own", 'Formal Hunting Attire',
          'The Black Dragon', 'Guru Suit', 'The White Shadow', 'The Straitjacket', 'The Rapacious Suit',
          'The Narcissus Suit', 'The Lotophage Suit', 'The Scarlet Suit', 'The Profligacy Suit', 'The Odium Suit',
          'The Temper Suit']
